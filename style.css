@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(./Images/fundo.svg);
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+.container {
+  width: 950px;
+  height: 530px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  scale: 0.8;
+  transform: translateY(110px);
+}
+
+.hole {
+  width: 221px;
+  height: 164px;
+  background-image: url(./Images/toupeira6.svg);
+}
+
+.hole:nth-child(6) {
+  background-image: url(./Images/toupeira1.svg);
+  animation-name: molehole;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes molehole {
+  0% {
+    background-image: url(./Images/toupeira1.svg);
+  }
+
+  50% {
+    background-image: url(./Images/toupeira2.svg);
+  }
+
+  80% {
+    background-image: url(./Images/toupeira3.svg);
+  }
+
+  100% {
+    background-image: url(./Images/toupeira6.svg);
+  }
+}
